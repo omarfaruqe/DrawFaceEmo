@@ -43,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				4257F95A1CDE47C10093B495 /* DrawFace */,
-				4257F9591CDE47C10093B495 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +52,7 @@
 				4257F9581CDE47C10093B495 /* DrawFace.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4257F95A1CDE47C10093B495 /* DrawFace */ = {
@@ -94,6 +94,7 @@
 		4257F9741CDE7F1F0093B495 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				4257F9591CDE47C10093B495 /* Products */,
 				4257F9621CDE47C10093B495 /* Assets.xcassets */,
 				4257F95B1CDE47C10093B495 /* AppDelegate.swift */,
 				4257F9641CDE47C10093B495 /* LaunchScreen.storyboard */,

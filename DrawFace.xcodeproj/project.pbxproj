@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4257F95C1CDE47C10093B495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4257F95B1CDE47C10093B495 /* AppDelegate.swift */; };
-		4257F95E1CDE47C10093B495 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4257F95D1CDE47C10093B495 /* ViewController.swift */; };
+		4257F95E1CDE47C10093B495 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4257F95D1CDE47C10093B495 /* FaceViewController.swift */; };
 		4257F9611CDE47C10093B495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4257F95F1CDE47C10093B495 /* Main.storyboard */; };
 		4257F9631CDE47C10093B495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4257F9621CDE47C10093B495 /* Assets.xcassets */; };
 		4257F9661CDE47C10093B495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4257F9641CDE47C10093B495 /* LaunchScreen.storyboard */; };
+		4257F96E1CDE48210093B495 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4257F96D1CDE48210093B495 /* FaceView.swift */; };
+		4257F9701CDE783B0093B495 /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4257F96F1CDE783B0093B495 /* FacialExpression.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4257F9581CDE47C10093B495 /* DrawFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4257F95B1CDE47C10093B495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4257F95D1CDE47C10093B495 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4257F95D1CDE47C10093B495 /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 		4257F9601CDE47C10093B495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4257F9621CDE47C10093B495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4257F9651CDE47C10093B495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4257F9671CDE47C10093B495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4257F96D1CDE48210093B495 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		4257F96F1CDE783B0093B495 /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,56 @@
 		4257F95A1CDE47C10093B495 /* DrawFace */ = {
 			isa = PBXGroup;
 			children = (
-				4257F95B1CDE47C10093B495 /* AppDelegate.swift */,
-				4257F95D1CDE47C10093B495 /* ViewController.swift */,
-				4257F95F1CDE47C10093B495 /* Main.storyboard */,
+				4257F9711CDE7EED0093B495 /* Model */,
+				4257F9721CDE7EF40093B495 /* View */,
+				4257F9731CDE7F000093B495 /* Controller */,
+				4257F9751CDE7F470093B495 /* Storyboard */,
+				4257F9741CDE7F1F0093B495 /* SupportingFiles */,
+			);
+			path = DrawFace;
+			sourceTree = "<group>";
+		};
+		4257F9711CDE7EED0093B495 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4257F96F1CDE783B0093B495 /* FacialExpression.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4257F9721CDE7EF40093B495 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4257F96D1CDE48210093B495 /* FaceView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4257F9731CDE7F000093B495 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4257F95D1CDE47C10093B495 /* FaceViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4257F9741CDE7F1F0093B495 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				4257F9621CDE47C10093B495 /* Assets.xcassets */,
+				4257F95B1CDE47C10093B495 /* AppDelegate.swift */,
 				4257F9641CDE47C10093B495 /* LaunchScreen.storyboard */,
 				4257F9671CDE47C10093B495 /* Info.plist */,
 			);
-			path = DrawFace;
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		4257F9751CDE7F470093B495 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4257F95F1CDE47C10093B495 /* Main.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +142,7 @@
 				TargetAttributes = {
 					4257F9571CDE47C10093B495 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = G922VPJ64L;
 					};
 				};
 			};
@@ -135,8 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4257F95E1CDE47C10093B495 /* ViewController.swift in Sources */,
+				4257F95E1CDE47C10093B495 /* FaceViewController.swift in Sources */,
+				4257F9701CDE783B0093B495 /* FacialExpression.swift in Sources */,
 				4257F95C1CDE47C10093B495 /* AppDelegate.swift in Sources */,
+				4257F96E1CDE48210093B495 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DrawFace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omarfaruqe.DrawFace;
@@ -262,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DrawFace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omarfaruqe.DrawFace;
